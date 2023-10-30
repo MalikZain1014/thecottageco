@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Galica";
+  src: local("Galica"),
+    url("./Fonts/Fontspring-DEMO-gelica-light.otf") format("truetype");
+
+  font-family: "Galica";
+  src: local("Galica"),
+    url("./Fonts/Fontspring-DEMO-gelica-bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Galica";
+}
+
+/* Footer */
+.text-reset {
+  text-decoration: none;
+}

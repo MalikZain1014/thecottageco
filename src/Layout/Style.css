@@ -1,0 +1,28 @@
+.image-container:hover .zoom-image {
+  transform: scale(1.1);
+}
+.cotage-communities {
+  margin: 15px;
+}
+/* Add this CSS to your stylesheets or style tag in your React component */
+
+.container:hover .zoom-container .zoom-image {
+  transform: scale(1.1); /* You can adjust the scale factor as needed */
+}
+
+.container:hover .product-title {
+  text-decoration: underline;
+  color: rgb(145, 177, 142);
+}
+
+/* Reset the styles when not hovering */
+.container .zoom-container .zoom-image {
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.container .product-title {
+  transition: text-decoration 0.3s;
+  text-decoration: none;
+  color: rgb(145, 177, 142);
+}

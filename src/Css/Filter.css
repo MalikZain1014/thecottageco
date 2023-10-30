@@ -1,0 +1,114 @@
+.content{
+  margin: auto;
+  padding: 15px;
+  max-width: none;
+  text-align: center;
+}
+.px{
+display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label{
+  display:block;
+  line-height:40px;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 0.3em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  transition: all 0.15s ease-out 0s;
+  background: #ffffff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: 1px solid black;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  outline: 3px solid #198754;
+}
+.option-input:checked {
+  background: #198754;
+  outline: none;
+}
+.option-input:checked::before {
+  width: 22px;
+  height: 22px;
+  display:flex;
+  content: '\f00c';
+  font-size: 12px;
+  font-weight:bold;
+  position: absolute;
+  align-items:center;
+  justify-content:center;
+  font-family:'Font Awesome 5 Free';
+}
+/* .option-input:checked::after {
+  
+} */
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+/* Custom CSS */
+/* Add this CSS to your stylesheet */
+.toggle-filter-button {
+  display: none;/* Initially hide the button on larger screens */
+
+}
+
+/* Show the button only on small screens */
+@media (max-width: 767px) {
+  .toggle-filter-button {
+      display: block;
+  }
+}
+
+/* Hide the filter on small screens */
+@media (max-width: 767px) {
+  .filter-col {
+      display: none !important;
+  }
+
+  .filter-col.show {
+      display: block !important;
+  }
+}
